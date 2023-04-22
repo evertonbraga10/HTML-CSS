@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <h2>Este video esta hospedado no proprio servidor</h2>
+
+    <!-- forma simples de fazer porém terá problemas de compatibilidade com alguns navegadores -->
+    <p title="forma simples de fazer porém terá problemas de compatibilidade com alguns navegadores">Primeira forma de fazer</p>
+    <!-- parametro poster serve para colocar a capa do video -->
+    <video src="midia/Meu-Video-web.mp4" width="500" poster="img/capavideo.png" controls loop></video>
+<br>
+    <!-- colocando varios tipos de formatos para garantir maior compatibilidade -->
+    <p title="colocando varios tipos de formatos para garantir maior compatibilidade">Segunda forma de fazer</p>
+    <!-- parametro poster serve para colocar a capa do video -->
+    <video width="500" poster="img/capavideo.png" controls loop>
+        <source src="midia/Meu-Video-web.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogv">
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+
+    <h1>Inserindo videos remotos</h1>
+    <h2 title="esta forma garante melhor desenpenho porque não consome dados do servidor local">Este video esta hospedado em outro servidor</h2>
+
+    <!-- esta forma garante melhor desenpenho porque não consome dados do servidor local -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xx01-s_Q-mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+   
+</body>
+</html>

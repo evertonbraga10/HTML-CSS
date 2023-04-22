@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <h2>Vamos aprender reproduzir audios em HTML5.</h2>
+    <p title="usar a tag <audio src> junto com os parametros controls e autoplay">Primeira forma de fazer.</p>
+    <!-- coloquei a tag <ol> <li> somente para ficar um a cima do outro -->
+        <ol>
+            <li>
+                <audio src="audio/When It's Good, It's Great - The 126ers.mp3" controls>Musica</audio>
+            </li>
+            <li>
+                <audio src="audio/Western Spaghetti - Chris Haugen.mp3" controls>Musica</audio>
+            </li>
+            <li>
+                <audio src="audio/When Johnny Comes Marching Home - Cooper Cannell.mp3" controls>Musica</audio>
+            </li>
+        </ol>
+
+    <p title="usar a tag <audio> e <source src>">Segunda forma de fazer.</p>  
+        <ol>
+            <li>
+                <audio preload="metadata" controls>
+    <!-- mpeg para audios em mp3 -->
+                    <source src="audio/A Dusty Road - Dan Lebowitz.mp3" type="audio/mpeg"> 
+                </audio>
+            </li>
+            <li>
+                <audio preload="metadata" controls>
+                    <source src="audio/Yonder Hill and Dale - Aaron Kenny.mp3" type="audio/mpeg"> 
+                </audio>
+            </li>
+            <li>
+                <audio preload="metadata" controls>
+                    <source src="audio/guanacast-33.mp3" type="audio/mpeg"> 
+                </audio>
+            </li>
+        </ol>  
+</body>
+</html>
