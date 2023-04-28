@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: normal;
 }
 
 /* Medidas absolutas
@@ -10,6 +11,8 @@ body {
     em, ex, rem, vw, vh, % */
 
 /* Geralemente 16px é igual a 1em */
+
+/* weigth = peso , width = largura, heidth = altura */
 
 h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
